@@ -30,10 +30,10 @@ class Todos extends Component {
         {!authenticated && (
           <div className="google">
             <GoogleLogin
-              clientId="765614537465-h1di2p6898d17r8ra22cisqs84gn2dk8.apps.googleusercontent.com"
+              clientId="765614537465-77cjrhpialj9pu86opblnb28q1vto680.apps.googleusercontent.com"
               cookiePolicy={'single_host_origin'}
               onSuccess={this.onSuccess}
-              onFailure={() => console.log('Working from home')}
+              onFailure={(err) => console.log(err)}
             />
           </div>
         )}
