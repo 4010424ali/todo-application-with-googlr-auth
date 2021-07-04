@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,100&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #0a1931;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  margin: auto;
+  width: 900px;
+  max-width: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading {
+  max-width: 70%;
+}
+
+.todo-inner-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-grid h3 {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ed-btn {
+  padding-top: 5px;
+}
+
+.edit-btn {
+  margin: 0 5px;
+}
+
+input {
+  background: transparent;
+  width: 70%;
+  color: #fff;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+input:focus {
+  border: 1px #fff solid;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input[type='submit'] {
+  width: 20%;
+  background: #fff;
+  color: #0a1931;
+  font-weight: bold;
+}
+
+.model-update {
+  background: transparent;
+  width: 70%;
+  color: #000;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.model-update:focus {
+  border: 1px #000 solid;
+  border-radius: 10px;
+}
+
+.model-update::placeholder {
+  color: #000;
+}
+
+.model-update-submit {
+  width: 20%;
+  background: #0a1931;
+  color: #fff;
+  font-weight: bold;
+}
+
+.google {
+  text-align: center;
+  margin: 10px;
+}
+
+.model-color {
+  color: #000;
 }
